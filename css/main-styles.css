@@ -22,10 +22,6 @@
   	justify-content: flex-end;
   	position: fixed;
   	top: 0;
-
-
-
-
   }
 
 #nav-icon {
@@ -40,7 +36,6 @@
 	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 	cursor: pointer;
-
 } 
 
 
