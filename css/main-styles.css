@@ -38,13 +38,9 @@
 	cursor: pointer;
 } 
 
-
-
-
-  #nav-icon {
+#nav-icon {
   	display: flex;
   	position: absolute;
-
 }
 
 #nav-icon span {
