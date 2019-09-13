@@ -25,8 +25,10 @@
   }
 
 #nav-icon {
-	width: 60px;
+	width: 45px;
+	height: 25px;
 	position: relative;
+	align-self: center;	
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
 	-o-transform: rotate(0deg);
@@ -40,14 +42,14 @@
 
 #nav-icon {
   	display: flex;
-  	position: absolute;
+  	
 }
 
 #nav-icon span {
     display: block;
     position: absolute;
-    height: 9px;
-    width: 50%;
+    height: 4px;
+    width: 30%;
     background: #000;
     opacity: 1;
     -webkit-transform: rotate(0deg);
@@ -60,8 +62,12 @@
     transition: .25s ease-in-out;
 }
 
+#nav-icon:hover span {
+	background-color: red;
+}
+
 #nav-icon span:nth-child(even) {
-    left: 50%;
+    left: 30%;
     border-radius: 0 9px 9px 0;
 }
 
@@ -75,11 +81,11 @@
 }
 
 #nav-icon span:nth-child(3), #nav-icon span:nth-child(4) {
-    top: 18px;
+    top: 10px;
 }
 
 #nav-icon span:nth-child(5), #nav-icon span:nth-child(6) {
-    top: 36px;
+    top: 20px;
 }
 
 #nav-icon.open span:nth-child(1),#nav-icon.open span:nth-child(6) {
@@ -97,13 +103,13 @@
 }
 
 #nav-icon.open span:nth-child(1) {
-    left: 5px;
-    top: 7px;
+    left: 2px;
+    top: 6px;
 }
 
 #nav-icon.open span:nth-child(2) {
-    left: calc(50% - 5px);
-    top: 7px;
+    left: calc(50% - 12px);
+    top: 6px;
 }
 
 #nav-icon.open span:nth-child(3) {
@@ -117,11 +123,11 @@
 }
 
 #nav-icon.open span:nth-child(5) {
-    left: 5px;
-    top: 29px;
+    left: 2px;
+    top: 15px;
 }
 
 #nav-icon.open span:nth-child(6) {
-    left: calc(50% - 5px);
-    top: 29px;
+    left: calc(50% - 12px);
+    top: 15px;
 }
