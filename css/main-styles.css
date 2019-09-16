@@ -9,18 +9,18 @@
   } */
 
   .heroImage {
-
   	height: 100vw;
   	background: url("../images/hero-cold-mountain.jpg") no-repeat #222;
-  	background-size: contain
+  	background-size: contain;
   }
 
+/* ---------------Nav Bar----------------- */
   .titleBar {
+  	position: fixed;
   	display: flex;
   	height: 40px;
   	width: 100%;
   	justify-content: flex-end;
-  	position: fixed;
   	top: 0;
   }
 
@@ -50,7 +50,7 @@
     position: absolute;
     height: 4px;
     width: 30%;
-    background: #000;
+    background: #fff;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -63,7 +63,7 @@
 }
 
 #nav-icon:hover span {
-	background-color: red;
+	background-color: #d2ffe4;
 }
 
 #nav-icon span:nth-child(even) {
@@ -130,4 +130,11 @@
 #nav-icon.open span:nth-child(6) {
     left: calc(50% - 12px);
     top: 15px;
+}
+
+.menuWordText {
+	color: #fff;
+	font-weight: bold;
+	align-self: center;
+	margin-right: .7rem;
 }
