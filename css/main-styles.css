@@ -2,11 +2,12 @@
 	margin: 0;
 	padding: 0;	/* 
 	background-color: #222; */
+	font-family: 'Kanit', sans-serif;
 }
 
-/* html, body, h1 {
-	background-color: #222;
-  } */
+html {
+	height: 1000px;
+  } 
 
   .heroImage {
   	height: 100vw;
@@ -132,9 +133,65 @@
     top: 15px;
 }
 
+#nav-icon:hover, .enjoyTheCold:hover{
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.3s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: .1s;
+}
+
+@keyframes shake {
+  0% { transform: translate(.5px, .5px) rotate(0deg); }
+  10% { transform: translate(-.5px, -1px) rotate(-.5deg); }
+  20% { transform: translate(-1.5px, 0px) rotate(.5deg); }
+  30% { transform: translate(1.5px, 1px) rotate(0deg); }
+  40% { transform: translate(.5px, -.5px) rotate(.5deg); }
+  50% { transform: translate(-.5px, 1px) rotate(-.5deg); }
+  60% { transform: translate(-1.5px, .5px) rotate(0deg); }
+  70% { transform: translate(1.5px, .5px) rotate(-.5deg); }
+  80% { transform: translate(-.5px, -.5px) rotate(.5deg); }
+  90% { transform: translate(.5px, 1px) rotate(0deg); }
+  100% { transform: translate(.5px, -1px) rotate(-.5deg); }
+}
+
 .menuWordText {
 	color: #fff;
 	font-weight: bold;
 	align-self: center;
 	margin-right: .7rem;
+	font-size: 20px;
+}
+
+.enjoyTheCold{
+	display: inline-block;
+	font-size: 30px;
+	font-style: italic;
+	color: #fff;
+	align-self: center;
+	margin-right: auto; 
+}
+
+.menuDropdown {
+	background-color: red;
+	position: absolute;
+	list-style-type: none;
+	margin-top: -8rem;
+	transition-property: all;
+	transition-duration: : 1s;
+}
+
+
+
+.menuDropdown li {
+	text-align: center;
+	display: block;
+	background-color: red;
+	width: 10rem;
+}
+
+.hideMenuDropdown {
+	margin-top: 2rem;
+	transition-property: all;
+	transition-duration: : 1s;
 }
