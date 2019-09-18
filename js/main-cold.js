@@ -1,11 +1,12 @@
 $(document).ready(function(){
 	$('#nav-icon').click(function(){
 		$(this).toggleClass('open');
-		if($('#pageNav').hasClass('hideMenuDropdown') == true) {
+		$('#pageNav').toggleClass('hideMenuDropdown');
+		/*if($('#pageNav').hasClass('hideMenuDropdown') == false) {
 			$('#pageNav').removeClass('hideMenuDropdown');
 		}else {
 			$('#pageNav').addClass('hideMenuDropdown');
-		}
+		}*/
 	});
 });
 
