@@ -5,26 +5,17 @@
 html {
 	height: 1000px;
 	font-family: 'Kanit', sans-serif;
-  } 
-
-  .heroImage {
-  	position: relative;
-  	width: 100vw;
-  	height: 100vh;
-  	background: url("../images/hero-cold-mountain.jpg") no-repeat #222;
-  	background-size: cover;
-  	background-position: center top;
   }
 
 /* ---------------Nav Bar----------------- */
-  .titleBar {
+.titleBar {
   	position: fixed;
   	display: flex;
   	height: 40px;
   	width: 100%;
   	justify-content: flex-end;
   	top: 0;
-  }
+}
 
 #nav-icon {
 	order: 1;
@@ -53,7 +44,7 @@ html {
     position: absolute;
     height: 4px;
     width: 30%;
-    background: #fff;
+    background: #E2E7EB;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -66,10 +57,10 @@ html {
 }
 
 #nav-icon:hover span {
-	background-color: #00bfff;
+	background-color: /* #00bfff */#97A8BD;
 }
 #nav-icon:hover + .menuWordText   {
-	color: #00bfff;
+	color: #97A8BD;
 	transition: color .25s ease-in-out;
 }
 
@@ -162,7 +153,7 @@ html {
 }
 
 .menuWordText {
-	color: #fff;
+	color: #E2E7EB;
 	font-weight: bold;
 	align-self: center;
 	margin-right: .7rem;
@@ -174,15 +165,15 @@ html {
 	display: inline-block;
 	font-size: 30px;
 	font-style: italic;
-	color: #fff;
+	color: #E2E7EB;
 	align-self: center;
 	margin-right: auto; 
 }
 
 .menuDropdown {
-	border: 1px solid #fff;
+	border: 1px solid #30639A;
 	border-radius: 5px;
-	background-color: #00bfff;
+	background-color: transparent;
 	position: absolute;
 	list-style-type: none;
 	transform: translate3d(20rem, 8rem, 0);
@@ -198,10 +189,43 @@ html {
 .menuDropdown li {
 	text-align: center;
 	display: block;
-	background-color: inherit;
-	border: .5px solid #fff;
+	border-radius: 7px;
+	background-color: #E2E7EB;
+	border: .5px solid #30639A;
 	width: 10rem;
 
 }
 
 
+/*----------Hero Image------------*/
+
+.heroImage {
+  	position: relative;
+  	width: 100vw;
+  	height: 100vh;
+  	background: url("../images/hero-cold-mountain.jpg") no-repeat #222;
+  	background-size: cover;
+  	background-position: center top;
+}
+
+.heroImageText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	font-size: calc(26px + (100 - 26) * ((100vw - 300px) / (1600 - 300)));
+	color: #15243D;
+	-moz-text-stroke-color: #15243D;
+    -webkit-text-stroke-color: #15243D;
+    -moz-text-stroke-width: 1px;  
+    -webkit-text-stroke-width: 1px;
+    white-space: nowrap;
+}
+
+.heroImageText span {
+	color: rgba(21, 36, 61, 0.1);
+	-moz-text-stroke-color: #15243D;
+    -webkit-text-stroke-color: #15243D;
+    -moz-text-stroke-width: 2px;  
+    -webkit-text-stroke-width: 2px;
+}
