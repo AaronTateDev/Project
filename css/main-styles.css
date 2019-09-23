@@ -168,6 +168,7 @@ html {
 	color: #E2E7EB;
 	align-self: center;
 	margin-right: auto; 
+	margin-left: 0.5em;
 }
 
 .menuDropdown {
@@ -213,7 +214,7 @@ html {
 	top: 50%;
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
-	font-size: calc(26px + (100 - 26) * ((100vw - 300px) / (1600 - 300)));
+	font-size: calc(22px + (100 - 26) * ((100vw - 300px) / (1600 - 300)));
 	color: #15243D;
 	-moz-text-stroke-color: #15243D;
     -webkit-text-stroke-color: #15243D;
