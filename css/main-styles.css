@@ -3,7 +3,7 @@
 }
 
 html {
-	height: 1000px;
+	height: 100%;
 	background-color: #282a2c;
 	overflow-x: hidden;
 	font-family: 'Kanit', sans-serif;
@@ -245,7 +245,6 @@ section .keepCoolText {
 	text-align: center;
 	margin-top: 4rem ;
 	font-size: calc(22px + (100 - 48) * ((100vw - 300px) / (1600 - 300)));
-
 }
 
 .keepCoolText span {
@@ -261,24 +260,72 @@ section .keepCoolText {
 
 /* ----------Poem Text Container-------------*/
 
-.poemTextContainer {
+.textAndLineContainer {
 	position: relative;
 	margin-top: 3em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #E2E7EB;
-	font-size: .9rem;text-align: right;
+	font-size: .9rem;
+	text-align: right;
 }
 
-.poemTextContainer span {
+.textAndLineContainer span {
 	margin-left: 2rem;
 }
 
-.poemTextContainerLine {
+.containerLine {
 	content: '';
 	width: 2px;
 	height: 3rem;
 	background-color: #E2E7EB;
 	margin-right: 6rem;
+}
+
+/* --First Picture Area-- */
+
+.grid-container1 {width: 90%; height: 500px;
+  display: grid;
+  margin: 0 auto;
+  margin-top: 3rem;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "topPicture topPicture rightPicture" "bottomLeftPicture middlePicture rightPicture";
+}
+
+.topPicture1 { grid-area: topPicture; background-color: pink; height: 100%; width: 100%;}
+
+.bottomLeftPicture1 { grid-area: bottomLeftPicture; background-color: green; height: 100%; width: 100%; }
+
+.middlePicture1 { grid-area: middlePicture; background-color: red; height: 100%; width: 100%; }
+
+.rightPicture1 { grid-area: rightPicture; background-color: green;  height: 100%; width: 100%; margin-right: -100px;}
+
+/* --Love Travel Text Area-- */
+
+.loveTravelLine {
+	content: '';
+	height: 9rem;
+	margin-right: 6rem;
+}
+
+.loveTravelText { 
+	position: relative;
+	text-align: left;
+	font-size: calc(16px + (100 - 48) * ((100vw - 300px) / (1600 - 300)));
+	align-self: flex-start;
+	left: 25%;
+}
+
+.loveTravelText span {
+	color: rgba(226, 231, 235, 1);
+	-moz-text-stroke-width: 0;  
+    -webkit-text-stroke-width: 0;
+     margin-left: 0;
+}
+
+.textAndLineContainer p {
+	align-self: flex-end;
 }
