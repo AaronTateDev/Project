@@ -10,7 +10,7 @@ html {
   }
 
 /* ---------------Nav Bar----------------- */
-.titleBar {
+.navBar {
   	position: fixed;
   	display: flex;
   	height: 40px;
@@ -133,11 +133,9 @@ html {
 }
 
 .enjoyTheCold:hover{
-  /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.3s;
-
-  /* When the animation is finished, start again */
   animation-iteration-count: .1s;
+  cursor: none;
 }
 
 @keyframes shake {
@@ -163,7 +161,7 @@ html {
 	transition: color .5s;
 }
 
-.enjoyTheCold{
+.enjoyTheCold {
 	display: inline-block;
 	font-size: 30px;
 	font-style: italic;
@@ -189,16 +187,19 @@ html {
 	transition: all .27s cubic-bezier(0,1.8,.36,1.55);
 }
 
+ul.menuDropdown {
+	border: 0;
+}
+
 .menuDropdown li {
 	text-align: center;
 	display: block;
 	border-radius: 7px;
 	background-color: #E2E7EB;
-	border: .5px solid #30639A;
+	border: 0.5px solid #30639A;
 	width: 10rem;
 
 }
-
 
 /*----------Hero Image------------*/
 
@@ -253,6 +254,8 @@ section .keepCoolText {
     -webkit-text-stroke-width: 0;
 }
 
+/*--------General Styles--------*/
+
 .afterHeroBodyArea {
 	width: 80%;
 	margin: 0 auto;
@@ -292,18 +295,40 @@ section .keepCoolText {
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "topPicture topPicture rightPicture" "bottomLeftPicture middlePicture rightPicture";
+  grid-template-areas: "topPicture topPicture rightPicture" 
+  					   "bottomLeftPicture middlePicture rightPicture";
 }
 
-.topPicture1 { grid-area: topPicture; background-color: pink; height: 100%; width: 100%;}
+.topPicture1 { 
+	grid-area: topPicture; 
+	background-color: pink; 
+	height: 100%; 
+	width: 100%;
+}
 
-.bottomLeftPicture1 { grid-area: bottomLeftPicture; background-color: green; height: 100%; width: 100%; }
+.bottomLeftPicture1 { 
+	grid-area: bottomLeftPicture; 
+	background-color: green; 
+	height: 100%; 
+	width: 100%; 
+}
 
-.middlePicture1 { grid-area: middlePicture; background-color: red; height: 100%; width: 100%; }
+.middlePicture1 { 
+	grid-area: middlePicture; 
+	background-color: red; 
+	height: 100%; 
+	width: 100%; 
+}
 
-.rightPicture1 { grid-area: rightPicture; background-color: green;  height: 100%; width: 100%; margin-right: -100px;}
+.rightPicture1 { 
+	grid-area: rightPicture; 
+	background-color: green; 
+	height: 100%; 
+	width: 100%; 
+	margin-right: -100px;
+}
 
-/* --Love Travel Text Area-- */
+/*---------Love Travel Text Area--------*/
 
 .loveTravelLine {
 	content: '';
