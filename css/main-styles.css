@@ -241,7 +241,7 @@ h1 span {
     -webkit-text-stroke-width: 2px;
 }
 
-section .keepCoolText {
+main .keepCoolText {
 	position: relative;
 	text-align: center;
 	margin-top: 4rem ;
@@ -288,7 +288,9 @@ section .keepCoolText {
 
 /* --First Picture Area-- */
 
-.grid-container1 {width: 90%; height: 500px;
+.grid-container1 {
+  width: 90%; 
+  height: 500px;
   display: grid;
   margin: 0 auto;
   margin-top: 3rem;
@@ -332,19 +334,17 @@ section .keepCoolText {
 
 .loveTravelTxtContainer{
 	position: relative;
-	margin-top: 4em;
+	margin-top: 4rem;
 	display: flex;
 	justify-content: center;
-	align-self: center;
+	align-items: flex-start ;
 	color: #E2E7EB;
 	font-size: .9rem;
-	text-align: right;/* 
-	transform: translateX(25%); */
+	text-align: right;
 }
 
 .loveTravelTxtContainer p {
-	text-align: left;
-	margin-top: 1rem;	
+	text-align: left;	
 }
 
 .loveAlignment {
@@ -355,8 +355,10 @@ section .keepCoolText {
 }
 
 .loveTravelLine {
+	margin-top: .4rem ;
 	content: '';
-	height: 15rem;
+	align-self: stretch;
+	height: calc(7rem + (100 - 28) * ((100vw - 300px) / (1600 - 300)));; 
 	margin-right: 3rem;
 }
 
@@ -364,14 +366,24 @@ section .keepCoolText {
 	position: relative;
 	text-align: left;
 	font-size: calc(16px + (100 - 58) * ((100vw - 300px) / (1600 - 300)));
-	align-self: ;
-	
+		
 }
 
 .loveTravelText span {
 	color: rgba(226, 231, 235, 1);
 	-moz-text-stroke-width: 0;  
     -webkit-text-stroke-width: 0;
-     margin-left: 0;
+    margin-left: 0;
+    margin-left: 0;
+}
+
+/*---------Wide Image--------*/
+
+.wideImadeContiner {
+	margin: 4rem auto;	
+	background-color: #97A8BD;
+	height: 250px;
+	width: 90%;
+
 }
 
