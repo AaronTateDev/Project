@@ -241,14 +241,14 @@ h1 span {
     -webkit-text-stroke-width: 2px;
 }
 
-main .keepCoolText {
+main .sectionTitlesText {
 	position: relative;
 	text-align: center;
 	margin-top: 4rem ;
 	font-size: calc(22px + (100 - 48) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.keepCoolText span {
+.sectionTitlesText span {
 	color: rgba(226, 231, 235, 1);
 	-moz-text-stroke-width: 0;  
     -webkit-text-stroke-width: 0;
@@ -271,7 +271,7 @@ main .keepCoolText {
 	align-items: center;
 	color: #E2E7EB;
 	font-size: .9rem;
-	text-align: right;
+	text-align: right;flex-shrink: 1;
 }
 
 .keepCoolTxtContainer span {
@@ -351,20 +351,21 @@ main .keepCoolText {
 	display: flex;
 	flex-flow: column;
 	align-items: flex-start;
-	transform: translateX(25%);
+	transform: translateX(16%);
 }
 
 .loveTravelLine {
 	margin-top: .4rem ;
 	content: '';
 	align-self: stretch;
-	height: calc(7rem + (100 - 28) * ((100vw - 300px) / (1600 - 300)));; 
+	height: calc(8rem + (100 - 28) * ((100vw - 300px) / (1600 - 300)));; 
 	margin-right: 3rem;
 }
 
 .loveTravelText { 
 	position: relative;
 	text-align: left;
+	margin-bottom: 1rem;
 	font-size: calc(16px + (100 - 58) * ((100vw - 300px) / (1600 - 300)));
 		
 }
@@ -387,3 +388,40 @@ main .keepCoolText {
 
 }
 
+/*---------Journey into the cold Container--------*/
+
+.coldJourneyTxtContainer {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 3em;
+	color: #E2E7EB;
+	font-size: .9rem;
+	text-align: right;flex-shrink: 1;
+}
+
+.innerJourneyContainer {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+
+}
+
+.coldJourneyTxtContainer h3 {margin: 0 auto;
+	margin-top: 1rem;
+	max-width: 700px; ;
+	flex: wrap;
+	align-self: flex-end;
+}
+
+footer {
+	margin-top: 4rem;
+	width: 100%;
+	height: 3rem;
+	background: repeating-linear-gradient(
+	  -55deg,
+	  #282a2c,
+	  #555 2px,
+	  #282a2c 3px,
+	  #282a2c 6px
+	);
+}
