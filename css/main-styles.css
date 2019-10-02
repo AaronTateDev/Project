@@ -286,7 +286,7 @@ main .sectionTitlesText {
 	margin-right: 6rem;
 }
 
-/* --First Picture Area-- */
+/* --First Picture Grid-- */
 
 .grid-container1 {
   width: 90%; 
@@ -327,7 +327,6 @@ main .sectionTitlesText {
 	background-color: green; 
 	height: 100%; 
 	width: 100%; 
-	margin-right: -100px;
 }
 
 /*---------Love Travel Text Area--------*/
@@ -413,6 +412,52 @@ main .sectionTitlesText {
 	flex: wrap;
 	align-self: flex-end;
 }
+
+/*---------Second Picture Grid--------*/
+
+.grid-container2 {
+  width: 90%; 
+  height: 500px;
+  display: grid;
+  margin: 0 auto;
+  margin-top: 3rem;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "leftPicture topMiddlePicture topRightPicture" 
+  					   "leftPicture bottomPicture bottomPicture";
+}
+
+.topPicture2 { 
+	grid-area: leftPicture; 
+	background-color: green; 
+	height: 100%; 
+	width: 100%;
+}
+
+.bottomLeftPicture2 { 
+	grid-area: bottomPicture; 
+	background-color: pink; 
+	height: 100%; 
+	width: 100%; 
+}
+
+.middlePicture2 { 
+	grid-area: topMiddlePicture; 
+	background-color: red; 
+	height: 100%; 
+	width: 100%; 
+}
+
+.rightPicture2 { 
+	grid-area: topRightPicture; 
+	background-color: green; 
+	height: 100%; 
+	width: 100%; 
+}
+
+/*---------Footer--------*/
+
 
 footer {
 	margin-top: 4rem;
