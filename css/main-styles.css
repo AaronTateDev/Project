@@ -241,11 +241,11 @@ h1 span {
     -webkit-text-stroke-width: 2px;
 }
 
-main .sectionTitlesText {
+.sectionTitlesText {
 	position: relative;
 	text-align: center;
 	margin-top: 4rem ;
-	font-size: calc(22px + (100 - 48) * ((100vw - 300px) / (1600 - 300)));
+	font-size: calc(16px + (100 - 58) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .sectionTitlesText span {
@@ -271,7 +271,7 @@ main .sectionTitlesText {
 	align-items: center;
 	color: #E2E7EB;
 	font-size: .9rem;
-	text-align: right;flex-shrink: 1;
+	text-align: right;
 }
 
 .keepCoolTxtContainer span {
@@ -470,4 +470,44 @@ footer {
 	  #282a2c 3px,
 	  #282a2c 6px
 	);
+	display: flex;
+	align-items: center;
+}
+
+footer a .fa-twitter,
+footer a .fa-youtube,
+footer a .fa-instagram,
+footer a .fa-tumblr-square {
+	margin-left: .8rem;
+	color: #E2E7EB;
+	font-size: 1.3rem;
+	transition: color .7s ease;
+}
+
+.fa-twitter:hover,
+.fa-youtube:hover, 
+.fa-instagram:hover, 
+.fa-tumblr-square:hover,
+a:focus .fa-twitter, 
+a:focus .fa-youtube, 
+a:focus .fa-instagram, 
+a:focus .fa-tumblr-square {
+	color: #4484BC;
+	transition: color .2s ease;
+}
+
+a {
+	outline: none;
+}
+
+footer :nth-child(5) {
+	margin-left: auto;
+}
+
+footer :last-child {
+	align-self: ;
+	margin-right: 1rem;
+	text-align: right;
+	color: #E2E7EB ;
+	font-size: .8rem;
 }
