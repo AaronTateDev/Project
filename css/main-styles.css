@@ -505,7 +505,6 @@ footer :nth-child(5) {
 }
 
 footer :last-child {
-	align-self: ;
 	margin-right: 1rem;
 	text-align: right;
 	color: #E2E7EB ;
