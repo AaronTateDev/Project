@@ -58,7 +58,7 @@ html {
 }
 
 #nav-icon:hover span {
-	background-color: /* #00bfff */#97A8BD;
+	background-color: #97A8BD;
 }
 #nav-icon:hover + .menuWordText   {
 	color: #97A8BD;
@@ -71,7 +71,7 @@ html {
 }
 
 #nav-icon span:nth-child(odd) {
-    left:0px;
+    left: 0px;
     border-radius: 9px 0 0 9px;
 }
 
@@ -162,7 +162,7 @@ html {
 
 .enjoyTheCold {
 	display: inline-block;
-	font-size: 30px;
+	font-size: 38px;
 	font-style: italic;
 	color: #E2E7EB;
 	align-self: center;
@@ -452,6 +452,33 @@ h1 span {
 	background-color: green; 
 	height: 100%; 
 	width: 100%; 
+}
+
+/*---------Find Your Cool Section--------*/
+
+.keepCoolTxtContainer ul {
+	margin-top: .4rem;
+}
+
+.keepCoolTxtContainer li {	
+	margin-bottom: 0.6rem;	
+}
+
+.locatioIcons li {
+	font-size: 1.1rem;
+	text-align: center;
+	margin-right: 1rem;
+}
+
+.locationList li {
+	font-size: .9rem;
+	line-height: 1.2rem;
+	text-align: left;
+}
+
+.locationLine {
+	margin-right: 4rem;
+	height: 4.5rem;
 }
 
 /*---------Footer--------*/
