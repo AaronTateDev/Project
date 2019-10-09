@@ -300,9 +300,11 @@ h1 span {
 }
 
 .topPicture1 { 
-	grid-area: topPicture; 
-	background-color: pink; 
-	height: 100%; 
+	grid-area: topPicture;
+	background: url("../images/grid-images/first-grid-picture-images/top-picture1.jpg"); 
+		background-repeat: no-repeat;
+	background-size: cover; 
+	background-color: pink;
 	width: 100%;
 }
 
@@ -321,11 +323,15 @@ h1 span {
 }
 
 .rightPicture1 { 
-	grid-area: rightPicture; 
+	grid-area: rightPicture;
+	background: url("../images/grid-images/first-grid-picture-images/right-picture1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;  
 	background-color: green; 
 	height: 100%; 
 	width: 100%; 
 }
+
 
 /*---------Love Travel Text Area--------*/
 
@@ -379,6 +385,9 @@ h1 span {
 
 .wideImadeContiner {
 	margin: 4rem auto;	
+	background: url("../images/wide-angle-mountainscape.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-color: #97A8BD;
 	height: 250px;
 	width: 90%;
@@ -393,7 +402,7 @@ h1 span {
 	margin-top: 3em;
 	color: #E2E7EB;
 	font-size: .9rem;
-	text-align: right;flex-shrink: 1;
+	text-align: right;
 }
 
 .innerJourneyContainer {
@@ -406,7 +415,7 @@ h1 span {
 .coldJourneyTxtContainer h3 {
 	margin: 0 auto;
 	margin-top: 1rem;
-	max-width: 700px; ;
+	max-width: 450px; ;
 	flex: wrap;
 	align-self: flex-end;
 }
@@ -426,28 +435,32 @@ h1 span {
   					   "leftPicture bottomPicture bottomPicture";
 }
 
-.topPicture2 { 
+.leftPicture2 { 
 	grid-area: leftPicture; 
 	background-color: green; 
 	height: 100%; 
 	width: 100%;
 }
 
-.bottomLeftPicture2 { 
-	grid-area: bottomPicture; 
+.bottomPicture2 { 
+	grid-area: bottomPicture;
+	background: url("../images/grid-images/second-grid-picture-images/bottom-picture2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center;
 	background-color: pink; 
 	height: 100%; 
 	width: 100%; 
 }
 
-.middlePicture2 { 
+.topMiddlePicture2 { 
 	grid-area: topMiddlePicture; 
 	background-color: red; 
 	height: 100%; 
 	width: 100%; 
 }
 
-.rightPicture2 { 
+.topRightPicture2 { 
 	grid-area: topRightPicture; 
 	background-color: green; 
 	height: 100%; 
