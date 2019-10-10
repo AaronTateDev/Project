@@ -7,8 +7,29 @@ html {
 	background-color: #282a2c;
 	overflow-x: hidden;
 	font-family: 'Kanit', sans-serif;
+	scroll-behavior: smooth;
   }
 
+/*--------Anchor Area --------*/
+a.anchor {
+    display: block;
+    position: relative;
+    top: 20px;
+    visibility: hidden;
+}
+
+#exploreNewPlacesAnchor {
+    top: -40px;
+}
+
+a {
+	text-decoration: none;
+	color: #30639A;
+}
+
+a:hover, a:focus {	
+	color: #97A8BD;
+}
 /* ---------------Nav Bar----------------- */
 .navBar {
   	position: fixed;
@@ -17,6 +38,8 @@ html {
   	width: 100%;
   	justify-content: flex-end;
   	top: 0;
+  	color: #30639A;
+  	z-index: 1;
 }
 
 #nav-icon {
@@ -131,7 +154,7 @@ html {
     top: 15px;
 }
 
-.enjoyTheCold:hover{
+.enjoyTheCold:hover {
   animation: shake 0.3s;
   animation-iteration-count: .1s;
   cursor: none;
@@ -302,7 +325,7 @@ h1 span {
 .topPicture1 { 
 	grid-area: topPicture;
 	background: url("../images/grid-images/first-grid-picture-images/top-picture1.jpg"); 
-		background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-size: cover; 
 	background-color: pink;
 	width: 100%;
@@ -310,13 +333,19 @@ h1 span {
 
 .bottomLeftPicture1 { 
 	grid-area: bottomLeftPicture; 
+	background: url("../images/grid-images/first-grid-picture-images/bottom-left-picture1.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover; 
 	background-color: green; 
 	height: 100%; 
 	width: 100%; 
 }
 
 .middlePicture1 { 
-	grid-area: middlePicture; 
+	grid-area: middlePicture;
+	background: url("../images/grid-images/first-grid-picture-images/middle-picture1.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover; 
 	background-color: red; 
 	height: 100%; 
 	width: 100%; 
@@ -436,7 +465,11 @@ h1 span {
 }
 
 .leftPicture2 { 
-	grid-area: leftPicture; 
+	grid-area: leftPicture;
+	background: url("../images/grid-images/second-grid-picture-images/left-picture2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	background-color: green; 
 	height: 100%; 
 	width: 100%;
@@ -454,14 +487,22 @@ h1 span {
 }
 
 .topMiddlePicture2 { 
-	grid-area: topMiddlePicture; 
+	grid-area: topMiddlePicture;
+	background: url("../images/grid-images/second-grid-picture-images/top-middle-picture2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	background-color: red; 
 	height: 100%; 
 	width: 100%; 
 }
 
 .topRightPicture2 { 
-	grid-area: topRightPicture; 
+	grid-area: topRightPicture;
+	background: url("../images/grid-images/second-grid-picture-images/top-right-picture2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
 	background-color: green; 
 	height: 100%; 
 	width: 100%; 
