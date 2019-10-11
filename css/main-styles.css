@@ -42,6 +42,10 @@ a:hover, a:focus {
   	z-index: 1;
 }
 
+.navbar ul a li {
+	padding-top: 5px;
+}
+
 #nav-icon {
 	order: 1;
 	width: 45px;
@@ -216,10 +220,11 @@ ul.menuDropdown {
 .menuDropdown li {
 	text-align: center;
 	display: block;
-	border-radius: 7px;
+	border-radius: 77% 23% 56% 44% / 61% 61% 39% 39%;
 	background-color: #E2E7EB;
-	border: 0.5px solid #30639A;
+	/* border: 0.5px solid #30639A; */
 	width: 10rem;
+	margin-bottom: ;
 }
 
 /*----------Hero Image------------*/
