@@ -392,7 +392,7 @@ h1 span {
 }
 
 .loveTravelLine {
-	margin-top: .4rem ;
+	margin-top: .5rem ;
 	content: '';
 	align-self: stretch;
 	height: calc(8rem + (100 - 28) * ((100vw - 300px) / (1600 - 300)));; 
@@ -428,9 +428,9 @@ h1 span {
 
 }
 
-/*---------Journey into the cold Container--------*/
+/*---------Explore Your Path Container--------*/
 
-.coldJourneyTxtContainer {
+.explorePathTxtContainer {
 	position: relative;
 	margin: 0 auto;
 	margin-top: 3em;
@@ -439,19 +439,29 @@ h1 span {
 	text-align: right;
 }
 
-.innerJourneyContainer {
+.innerExplorePathTxtContainer {
 	margin-top: 1rem;
+	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-
+	max-width: 320px;
+	align-items:center;
+	text-align: left;
 }
 
-.coldJourneyTxtContainer h3 {
-	margin: 0 auto;
-	margin-top: 1rem;
-	max-width: 450px; ;
-	flex: wrap;
-	align-self: flex-end;
+.explorePathTxtContainer h3 {
+	margin: 1rem auto;
+	max-width: 450px;
+	text-align: center;
+	font-size: 1.1rem;
+}
+
+.exploreYourPathContainerLine {
+	content: '';
+	width: 2px;
+	height: 3rem;
+	background-color: #E2E7EB;
+	margin-right: 3rem;
 }
 
 /*---------Second Picture Grid--------*/
