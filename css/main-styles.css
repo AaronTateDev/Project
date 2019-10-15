@@ -458,7 +458,7 @@ h1 span {
 
 .exploreYourPathContainerLine {
 	content: '';
-	width: 2px;
+	width: 3px;
 	height: 3rem;
 	background-color: #E2E7EB;
 	margin-right: 3rem;
