@@ -6,7 +6,5 @@ $(document).ready(function(){
 });
 
 
-$('#image2').click(function(e) {
-	/*$('body, html').toggleClass('cool');*/
-});
+
 

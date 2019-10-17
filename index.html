@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Cold Snow</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/main-styles.css">
-	<link rel="stylesheet" href="css/cssbox.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/main-styles.css">	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit:600&display=swap">
 	<script src="https://kit.fontawesome.com/6972ec8cbc.js" crossorigin="anonymous"></script>
 </head>
@@ -71,12 +71,11 @@
 
 		<!-------------------------- TESTING ------------------------->
 		<!-- try jQuery lightgallery or viewer -->
-		<div class="cssbox">
-        <a id="image2" href="#image2"><img class="cssbox_thumb wideImadeContiner" src="/images/wide-angle-mountainscape.jpg"/>
-            <span class="cssbox_full"><img src="/images/wide-angle-mountainscape.jpg" href="#void"/></span>
-        </a>
-        <a class="cssbox_close" href="#void"></a>
-    </div>
+		<div class="wideMountain">
+			<a href="images/wide-angle-mountainscape.jpg" data-lightbox="firstOne" data-title="My caption">
+			<img class="wideImageContiner" src="images/wide-angle-mountainscape.jpg"></a>
+		</div>
+		<!-- <img class="wideImadeContiner" src="/images/wide-angle-mountainscape.jpg"> -->
     <!------------------------- TESTING ------------------------>
 
 
@@ -138,9 +137,8 @@
 	</footer>
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.js"
-  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
-  crossorigin="anonymous"></script>
-  <script src="js/main-cold.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/main-cold.js"></script>
 </body>
 </html>

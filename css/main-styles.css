@@ -1,9 +1,9 @@
-* {
+*, *::before, *::after {
 	box-sizing: border-box;
 }
 
 html {
-	height: 100%;
+	
 	background-color: #282a2c;
 	overflow-x: hidden;
 	font-family: 'Kanit', sans-serif;
@@ -418,15 +418,17 @@ h1 span {
 }
 
 /*---------Wide Image--------*/
-
-.wideImadeContiner {
-	margin: 4rem auto;	
-	background: url("../images/wide-angle-mountainscape.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #97A8BD;
-	height: 250px;
+.wideMountain {
+	margin: 0 auto;
+	margin-top: 3.5rem;
 	width: 90%;
+	height: 18rem;
+}
+a .wideImageContiner {
+	display: flex;
+	justify-content: flex-end;
+	height: 100%;
+	width: 100%;
 
 }
 
