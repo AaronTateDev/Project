@@ -289,6 +289,22 @@ h1 span {
 	margin: 0 auto;
 }
 
+.gridImgSizing {
+	height: 100%;
+	width: 100%;
+}
+
+img {
+	transition: all .4s ease;
+	box-shadow: 1.5px 1px 2.5px #000;	
+}
+
+img:hover {
+	transform: translate3d(-2px, -2px, 0);	
+	box-shadow: 6px 4px 10px #000;
+	transition: all .3s ease;
+}
+
 /* ----------Keep Cool Text Container-------------*/
 
 .keepCoolTxtContainer {
@@ -331,11 +347,6 @@ h1 span {
 
 .topPicture1 { 
 	grid-area: topPicture;
-	background: url("../images/grid-images/first-grid-picture-images/top-picture1.jpg"); 
-	background-repeat: no-repeat;
-	background-size: cover; 
-	background-color: pink;
-	width: 100%;
 }
 
 .bottomLeftPicture1 { 
@@ -422,8 +433,9 @@ h1 span {
 	margin: 0 auto;
 	margin-top: 3.5rem;
 	width: 90%;
-	height: 18rem;
+	height: 18rem;	
 }
+
 a .wideImageContiner {
 	display: flex;
 	justify-content: flex-end;
