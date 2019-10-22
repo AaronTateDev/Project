@@ -333,52 +333,52 @@ img:hover {
 /* --First Picture Grid-- */
 
 .grid-container1 {
-  width: 90%; 
-  height: 500px;
-  display: grid;
-  margin: 0 auto;
-  margin-top: 3rem;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "topPicture topPicture rightPicture" 
-  					   "bottomLeftPicture middlePicture rightPicture";
+    /* width: 90%; 
+    height: 500px;
+    display: grid;
+    margin: 0 auto;
+    margin-top: 3rem;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "topPicture topPicture rightPicture" 
+    					   "bottomLeftPicture middlePicture rightPicture"; */
+
+
+    /*Mobile Size*/
+    width: 100%; 
+    display: grid;
+    margin: 3rem auto;
+  	margin-bottom: 3rem;
+    grid-gap: calc(8px  - (8px - 1vw));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "topPicture topPicture rightPicture" 
+    					   "bottomLeftPicture middlePicture rightPicture";
+}
+
+.grid-container1::after {
+	content:'';
+	clear: both;
+	display: block;
+
 }
 
 .topPicture1 { 
 	grid-area: topPicture;
 }
 
+.rightPicture1 { 
+	grid-area: rightPicture;
+}
+
 .bottomLeftPicture1 { 
-	grid-area: bottomLeftPicture; 
-	background: url("../images/grid-images/first-grid-picture-images/bottom-left-picture1.jpg"); 
-	background-repeat: no-repeat;
-	background-size: cover; 
-	background-color: green; 
-	height: 100%; 
-	width: 100%; 
+	grid-area: bottomLeftPicture;
 }
 
 .middlePicture1 { 
-	grid-area: middlePicture;
-	background: url("../images/grid-images/first-grid-picture-images/middle-picture1.jpg"); 
-	background-repeat: no-repeat;
-	background-size: cover; 
-	background-color: red; 
-	height: 100%; 
-	width: 100%; 
+	grid-area: middlePicture; 
 }
-
-.rightPicture1 { 
-	grid-area: rightPicture;
-	background: url("../images/grid-images/first-grid-picture-images/right-picture1.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;  
-	background-color: green; 
-	height: 100%; 
-	width: 100%; 
-}
-
 
 /*---------Love Travel Text Area--------*/
 
@@ -497,46 +497,18 @@ a .wideImageContiner {
 
 .leftPicture2 { 
 	grid-area: leftPicture;
-	background: url("../images/grid-images/second-grid-picture-images/left-picture2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-color: green; 
-	height: 100%; 
-	width: 100%;
-}
-
-.bottomPicture2 { 
-	grid-area: bottomPicture;
-	background: url("../images/grid-images/second-grid-picture-images/bottom-picture2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover; 
-	background-position: center;
-	background-color: pink; 
-	height: 100%; 
-	width: 100%; 
 }
 
 .topMiddlePicture2 { 
 	grid-area: topMiddlePicture;
-	background: url("../images/grid-images/second-grid-picture-images/top-middle-picture2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-color: red; 
-	height: 100%; 
-	width: 100%; 
 }
 
 .topRightPicture2 { 
 	grid-area: topRightPicture;
-	background: url("../images/grid-images/second-grid-picture-images/top-right-picture2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center; 
-	background-color: green; 
-	height: 100%; 
-	width: 100%; 
+}
+
+.bottomPicture2 { 
+	grid-area: bottomPicture;
 }
 
 /*---------Find Your Cool Section--------*/
