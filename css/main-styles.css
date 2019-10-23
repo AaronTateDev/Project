@@ -10,7 +10,9 @@ html {
 	scroll-behavior: smooth;
   }
 
-
+p {
+  	font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+  }
 
 /*--------Anchor Area --------*/
 a.anchor {
@@ -42,6 +44,7 @@ a:hover, a:focus {
   	top: 0;
   	color: #30639A;
   	z-index: 1;
+  	background-color: rgba(87, 125, 165, .1);
 }
 
 .navbar ul a li {
@@ -272,7 +275,6 @@ h1 span {
 .sectionTitlesText {
 	position: relative;
 	text-align: center;
-	margin-top: 4rem ;
 	font-size: calc(16px + (100 - 58) * ((100vw - 300px) / (1600 - 300)));
 }
 
@@ -287,6 +289,7 @@ h1 span {
 .afterHeroBodyArea {
 	width: 80%;
 	margin: 0 auto;
+	margin-top: 5rem;
 }
 
 .gridImgSizing {
@@ -348,20 +351,13 @@ img:hover {
     /*Mobile Size*/
     width: 100%; 
     display: grid;
-    margin: 3rem auto;
-  	margin-bottom: 3rem;
-    grid-gap: calc(8px  - (8px - 1vw));
+    margin: 6rem auto;
+    grid-gap: calc(10% / 6);
+    grid-row-gap: calc(15% / 6);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "topPicture topPicture rightPicture" 
     					   "bottomLeftPicture middlePicture rightPicture";
-}
-
-.grid-container1::after {
-	content:'';
-	clear: both;
-	display: block;
-
 }
 
 .topPicture1 { 
@@ -430,10 +426,9 @@ img:hover {
 
 /*---------Wide Image--------*/
 .wideMountain {
-	margin: 0 auto;
-	margin-top: 3.5rem;
-	width: 90%;
-	height: 18rem;	
+	margin: 6rem auto;
+	margin-bottom: 4rem;
+	width: 90%;		
 }
 
 a .wideImageContiner {
@@ -460,16 +455,17 @@ a .wideImageContiner {
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-	max-width: 320px;
+	max-width: 35rem;
 	align-items:center;
 	text-align: left;
 }
 
 .explorePathTxtContainer h3 {
-	margin: 1rem auto;
-	max-width: 450px;
+	margin: 1.5rem auto;
+	max-width: 75%;
 	text-align: center;
-	font-size: 1.1rem;
+	font-size: calc(20px + 5 * ((100vw - 320px) / 680));
+  
 }
 
 .exploreYourPathContainerLine {
@@ -483,8 +479,7 @@ a .wideImageContiner {
 /*---------Second Picture Grid--------*/
 
 .grid-container2 {
-  width: 90%; 
-  height: 500px;
+  /* width: 90%; 
   display: grid;
   margin: 0 auto;
   margin-top: 3rem;
@@ -492,7 +487,18 @@ a .wideImageContiner {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "leftPicture topMiddlePicture topRightPicture" 
+  					   "leftPicture bottomPicture bottomPicture"; */
+
+  width: 100%; 
+  display: grid;
+  margin: 6rem auto;
+  grid-gap: calc(10% / 6);
+  grid-row-gap: calc(15% / 6);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "leftPicture topMiddlePicture topRightPicture" 
   					   "leftPicture bottomPicture bottomPicture";
+
 }
 
 .leftPicture2 { 
