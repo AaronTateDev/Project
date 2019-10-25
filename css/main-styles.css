@@ -2,17 +2,16 @@
 	box-sizing: border-box;
 }
 
-html {
-	
+html {	
 	background-color: #282a2c;
 	overflow-x: hidden;
 	font-family: 'Kanit', sans-serif;
 	scroll-behavior: smooth;
-  }
+}
 
 p {
   	font-size: calc(12px + 6 * ((100vw - 320px) / 680));
-  }
+}
 
 /*--------Anchor Area --------*/
 a.anchor {
@@ -44,7 +43,10 @@ a:hover, a:focus {
   	top: 0;
   	color: #30639A;
   	z-index: 1;
-  	background-color: rgba(87, 125, 165, .1);
+  	background: rgb(226,231,235);
+	background: -webkit-linear-gradient(rgba(226,231,235,0.3) -20%, rgba(87,125,165,0.05) 43%, rgba(40,42,44,0.0) 100%);
+	background: -o-linear-gradient(rgba(226,231,235,0.3) -20%, rgba(87,125,165,0.05) 43%, rgba(40,42,44,0.0) 100%);
+	background: linear-gradient(rgba(226,231,235,0.3) -20%, rgba(87,125,165,0.05) 43%, rgba(40,42,44,0.0) 100%);
 }
 
 .navbar ul a li {
@@ -328,27 +330,15 @@ img:hover {
 .containerLine {
 	content: '';
 	width: 2px;
-	height: 3rem;
+	height: calc(2.3rem + (40) * ((100vw - 400px) / (1600 - 300)));
 	background-color: #E2E7EB;
-	margin-right: 6rem;
+	margin-top: 4px;
+	margin-right: 10%;
 }
 
 /* --First Picture Grid-- */
 
 .grid-container1 {
-    /* width: 90%; 
-    height: 500px;
-    display: grid;
-    margin: 0 auto;
-    margin-top: 3rem;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "topPicture topPicture rightPicture" 
-    					   "bottomLeftPicture middlePicture rightPicture"; */
-
-
-    /*Mobile Size*/
     width: 100%; 
     display: grid;
     margin: 6rem auto;
@@ -403,9 +393,8 @@ img:hover {
 .loveTravelLine {
 	margin-top: .5rem ;
 	content: '';
-	align-self: stretch;
-	height: calc(8rem + (100 - 28) * ((100vw - 300px) / (1600 - 300)));; 
-	margin-right: 3rem;
+	height:  calc(6.1rem + (150) * ((100vw - 200px) / (1600 - 300)));
+	margin-right: 2%;
 }
 
 .loveTravelText { 
@@ -462,33 +451,23 @@ a .wideImageContiner {
 
 .explorePathTxtContainer h3 {
 	margin: 1.5rem auto;
-	max-width: 75%;
+	max-width: 95%;
 	text-align: center;
-	font-size: calc(20px + 5 * ((100vw - 320px) / 680));
+	font-size: calc(18px + 5 * ((100vw - 320px) / 680));
   
 }
 
-.exploreYourPathContainerLine {
+.exploreYourPathContainer {
 	content: '';
 	width: 3px;
-	height: 3rem;
+	height: calc(1.2rem + (30) * ((100vw - 200px) / (1800 - 20)));;
 	background-color: #E2E7EB;
-	margin-right: 3rem;
+	margin-right: 8%;
 }
 
 /*---------Second Picture Grid--------*/
 
 .grid-container2 {
-  /* width: 90%; 
-  display: grid;
-  margin: 0 auto;
-  margin-top: 3rem;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "leftPicture topMiddlePicture topRightPicture" 
-  					   "leftPicture bottomPicture bottomPicture"; */
-
   width: 100%; 
   display: grid;
   margin: 6rem auto;
@@ -498,7 +477,6 @@ a .wideImageContiner {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "leftPicture topMiddlePicture topRightPicture" 
   					   "leftPicture bottomPicture bottomPicture";
-
 }
 
 .leftPicture2 { 
@@ -597,4 +575,11 @@ footer :last-child {
 	text-align: right;
 	color: #E2E7EB ;
 	font-size: .8rem;
+}
+
+@media only screen and (min-width: 750px) {
+  .explorePathTxtContainer h3 {
+	    max-width: 75%;
+	    font-size: calc(20px + 5 * ((100vw - 320px) / 680));
+	}
 }
