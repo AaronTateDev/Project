@@ -210,7 +210,7 @@ a:hover, a:focus {
 	background-color: transparent;
 	position: absolute;
 	list-style-type: none;
-	transform: translate3d(20rem, 8rem, 0);
+	transform: translate3d(40rem, 8rem, 0);
 	transition: all .25s cubic-bezier(.47,-0.78,1,-0.59);
 	overflow: hidden;
 }
@@ -220,19 +220,35 @@ a:hover, a:focus {
 	transition: all .27s cubic-bezier(0,1.8,.36,1.55);
 }
 
+
+/* -----------------ADD MEDIA QUERY TO THIS--------------- */
+/* -----------------ADD MEDIA QUERY TO THIS--------------- */
+/* -----------------ADD MEDIA QUERY TO THIS--------------- */
 ul.menuDropdown {
+	/* display: block;
+	width: 10rem;
+	border: 0; */
+
+	display: block;
+	width: 100%;
 	border: 0;
+	border-radius: 0;
 }
 
 .menuDropdown li {
 	text-align: center;
 	display: block;
-	border-radius: 77% 23% 56% 44% / 61% 61% 39% 39%;
+	/* border-radius: 77% 23% 56% 44% / 61% 61% 39% 39%; */
 	background-color: #E2E7EB;
-	/* border: 0.5px solid #30639A; */
-	width: 10rem;
-	margin-bottom: ;
+	width: 100%;
+	height: 3rem;
+	padding-top: 1rem;
+	border-bottom: 1px solid #30639A;
 }
+
+/* -----------------ADD MEDIA QUERY TO THIS--------------- */
+/* -----------------ADD MEDIA QUERY TO THIS--------------- */
+/* -----------------ADD MEDIA QUERY TO THIS--------------- */
 
 /*----------Hero Image------------*/
 
@@ -471,8 +487,9 @@ a .wideImageContiner {
   width: 100%; 
   display: grid;
   margin: 6rem auto;
+  line-height: 0.74rem;
   grid-gap: calc(10% / 6);
-  grid-row-gap: calc(15% / 6);
+  grid-row-gap: calc(18% / 6);
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "leftPicture topMiddlePicture topRightPicture" 
@@ -506,20 +523,23 @@ a .wideImageContiner {
 }
 
 .locatioIcons li {
-	font-size: 1.1rem;
+	font-size: calc(12px + (6 * ((100vw - 320px) / 680)));
+	height: calc(1.8rem * ((100vw - 200px) / (1800 - 20)));;
 	text-align: center;
 	margin-right: 1rem;
+	line-height: 1rem;
 }
 
 .locationList li {
-	font-size: .9rem;
-	line-height: 1.2rem;
+	font-size: calc(12px + (6 * ((100vw - 320px) / 680)));
+	line-height: 1rem;
 	text-align: left;
 }
 
 .locationLine {
-	margin-right: 4rem;
-	height: 4.5rem;
+	margin-top: -1px;
+	margin-right: 4%;
+	height: calc(3.8rem + (20) * ((100vw - 300px) / (1600 - 300)));
 }
 
 /*---------Footer--------*/
