@@ -35,6 +35,7 @@ a:hover, a:focus {
 }
 /* ---------------Nav Bar----------------- */
 .navBar {
+	pointer-events: none;
   	position: fixed;
   	display: flex;
   	height: 40px;
@@ -71,7 +72,8 @@ a:hover, a:focus {
 } 
 
 #nav-icon {
-  	display: flex;  	
+  	display: flex;
+  	pointer-events: all;  	
 }
 
 #nav-icon span {
@@ -192,9 +194,10 @@ a:hover, a:focus {
 	margin-right: .7rem;
 	font-size: 20px;
 	transition: color .5s;
+	z-index: 20;
 }
 
-.enjoyTheCold {
+.enjoyTheCold {pointer-events: all;
 	display: inline-block;
 	font-size: 38px;
 	font-style: italic;
@@ -202,6 +205,7 @@ a:hover, a:focus {
 	align-self: center;
 	margin-right: auto; 
 	margin-left: 0.5em;
+	z-index: 20;
 }
 
 .menuDropdown {
@@ -210,45 +214,35 @@ a:hover, a:focus {
 	background-color: transparent;
 	position: absolute;
 	list-style-type: none;
-	transform: translate3d(40rem, 8rem, 0);
+	transform: translate3d(25rem, 8rem, 0);
 	transition: all .25s cubic-bezier(.47,-0.78,1,-0.59);
 	overflow: hidden;
+	visibility: hidden;
 }
 
 .menuDropdown.hideMenuDropdown {
-	transform: translate3d(0, 2.5rem,0);
+	transform: translate3d(0, 0,0);
+	visibility: visible;	
 	transition: all .27s cubic-bezier(0,1.8,.36,1.55);
 }
 
-
-/* -----------------ADD MEDIA QUERY TO THIS--------------- */
-/* -----------------ADD MEDIA QUERY TO THIS--------------- */
-/* -----------------ADD MEDIA QUERY TO THIS--------------- */
 ul.menuDropdown {
-	/* display: block;
-	width: 10rem;
-	border: 0; */
-
+	pointer-events: all;  
 	display: block;
 	width: 100%;
 	border: 0;
 	border-radius: 0;
+	z-index: -1;
 }
 
 .menuDropdown li {
-	text-align: center;
-	display: block;
-	/* border-radius: 77% 23% 56% 44% / 61% 61% 39% 39%; */
+	text-align: center;z-index: -1;
+	justify-content: center;
 	background-color: #E2E7EB;
-	width: 100%;
-	height: 3rem;
-	padding-top: 1rem;
+	height: 25vh;
+	
 	border-bottom: 1px solid #30639A;
 }
-
-/* -----------------ADD MEDIA QUERY TO THIS--------------- */
-/* -----------------ADD MEDIA QUERY TO THIS--------------- */
-/* -----------------ADD MEDIA QUERY TO THIS--------------- */
 
 /*----------Hero Image------------*/
 
@@ -601,5 +595,49 @@ footer :last-child {
   .explorePathTxtContainer h3 {
 	    max-width: 75%;
 	    font-size: calc(20px + 5 * ((100vw - 320px) / 680));
+	}
+}
+
+.navDarken {
+		color: #30639A;
+	}
+	#nav-icon.navDarkenBurger span {
+		background-color: #30639A;
+	}
+	#nav-icon.navDarkenBurger:hover span {
+		background-color: #97A8BD;
+	}
+
+/*---------------@Media Stuff--------------*/
+
+@media only screen and (min-width: 750px) {
+	.menuDropdown.hideMenuDropdown  {
+		transform: translate3d(0, 2.5rem,0);
+		
+	}
+
+	ul.menuDropdown {
+		width: 10rem;	
+		border: 0; 
+	}
+
+	.menuDropdown li {	
+		border-radius: 77% 23% 56% 44% / 61% 61% 39% 39%;		
+		width: 100%;
+		height: 2rem;
+		padding-top: .5rem;		
+		border: 1.5px solid #30639A;
+	}
+
+	.navDarken {
+	 	color: #E2E7EB;
+	}
+
+	#nav-icon.navDarkenBurger span {
+		background-color: #E2E7EB;
+	}
+
+	#nav-icon.navDarkenBurger:hover span {
+		background-color: #E2E7EB;
 	}
 }
