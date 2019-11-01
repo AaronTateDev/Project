@@ -33,6 +33,7 @@ a {
 a:hover, a:focus {	
 	color: #97A8BD;
 }
+
 /* ---------------Nav Bar----------------- */
 .navBar {
 	pointer-events: none;
@@ -96,6 +97,7 @@ a:hover, a:focus {
 #nav-icon:hover span {
 	background-color: #97A8BD;
 }
+
 #nav-icon:hover + .menuWordText   {
 	color: #97A8BD;
 	transition: color .25s ease-in-out;
@@ -236,12 +238,14 @@ ul.menuDropdown {
 }
 
 .menuDropdown li {
-	text-align: center;z-index: -1;
+	display: flex;
+	align-items: center;
+	text-align: center;
 	justify-content: center;
 	background-color: #E2E7EB;
 	height: 25vh;
-	
-	border-bottom: 1px solid #30639A;
+	border-bottom: 2px solid #30639A;
+	font-size: calc(16px + (100 - 46) * ((100vw - 400px) / (1600 - 300)));
 }
 
 /*----------Hero Image------------*/
@@ -349,7 +353,8 @@ img:hover {
 /* --First Picture Grid-- */
 
 .grid-container1 {
-    width: 100%; 
+    width: 90%;
+    max-width: 1000px;
     display: grid;
     margin: 6rem auto;
     grid-gap: calc(10% / 6);
@@ -466,7 +471,7 @@ a .wideImageContiner {
   
 }
 
-.exploreYourPathContainer {
+.exploreYourPathContainerLine {
 	content: '';
 	width: 3px;
 	height: calc(1.2rem + (30) * ((100vw - 200px) / (1800 - 20)));;
@@ -477,7 +482,8 @@ a .wideImageContiner {
 /*---------Second Picture Grid--------*/
 
 .grid-container2 {
-  width: 100%; 
+  width: 90%;
+  max-width: 1000px; 
   display: grid;
   margin: 6rem auto;
   line-height: 0.74rem;
@@ -536,7 +542,6 @@ a .wideImageContiner {
 }
 
 /*---------Footer--------*/
-
 
 footer {
 	margin-top: 4rem;
@@ -598,14 +603,16 @@ footer :last-child {
 }
 
 .navDarken {
-		color: #30639A;
-	}
-	#nav-icon.navDarkenBurger span {
-		background-color: #30639A;
-	}
-	#nav-icon.navDarkenBurger:hover span {
-		background-color: #97A8BD;
-	}
+	color: #30639A;
+}
+
+#nav-icon.navDarkenBurger span {
+	background-color: #30639A;
+}
+
+#nav-icon.navDarkenBurger:hover span {
+	background-color: #97A8BD;
+}
 
 /*---------------@Media Stuff--------------*/
 
@@ -621,22 +628,20 @@ footer :last-child {
 	}
 
 	.menuDropdown li {	
+		align-items: flex-start;
 		border-radius: 77% 23% 56% 44% / 61% 61% 39% 39%;		
 		width: 100%;
 		height: 2rem;
 		padding-top: .5rem;		
 		border: 1.5px solid #30639A;
+		font-size: 1rem;
 	}
 
 	.navDarken {
 	 	color: #E2E7EB;
 	}
-
+	
 	#nav-icon.navDarkenBurger span {
-		background-color: #E2E7EB;
-	}
-
-	#nav-icon.navDarkenBurger:hover span {
 		background-color: #E2E7EB;
 	}
 }

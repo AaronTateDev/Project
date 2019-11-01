@@ -8,10 +8,6 @@ $(document).ready(function(){
 	});
 });
 
-
-//ADD JS THAT CLOSES MENU ON CLICK
-//ADD CSS TO MAKE li text centered
-
-
-
+$('a[href="#keepCoolAnchor"], a[href="#loveTravelAnchor"], a[href="#exploreNewPlacesAnchor"], a[href="#contactUsAnchor"]').
+attr('onclick', "$('#nav-icon').click()"); //Onclick Menu Hider
 
