@@ -523,7 +523,7 @@ a .wideImageContiner {
 
 .locatioIcons li {
 	font-size: calc(12px + (6 * ((100vw - 320px) / 680)));
-	height: calc(1.8rem * ((100vw - 200px) / (1800 - 20)));;
+	height: calc(1.8rem * ((100vw - 200px) / (1800 - 20)));
 	text-align: center;
 	margin-right: 1rem;
 	line-height: 1rem;
@@ -531,7 +531,7 @@ a .wideImageContiner {
 
 .locationList li {
 	font-size: calc(12px + (6 * ((100vw - 320px) / 680)));
-	line-height: 1rem;
+	line-height: calc(12px + (6 * ((100vw - 320px) / 680)));;
 	text-align: left;
 }
 
@@ -591,15 +591,8 @@ footer :nth-child(5) {
 footer :last-child {
 	margin-right: 1rem;
 	text-align: right;
-	color: #E2E7EB ;
+	color: #E2E7EB;
 	font-size: .8rem;
-}
-
-@media only screen and (min-width: 750px) {
-  .explorePathTxtContainer h3 {
-	    max-width: 75%;
-	    font-size: calc(20px + 5 * ((100vw - 320px) / 680));
-	}
 }
 
 .navDarken {
@@ -617,9 +610,13 @@ footer :last-child {
 /*---------------@Media Stuff--------------*/
 
 @media only screen and (min-width: 750px) {
+	.explorePathTxtContainer h3 {
+	    max-width: 75%;
+	    font-size: calc(20px + 5 * ((100vw - 320px) / 680));
+	}
+
 	.menuDropdown.hideMenuDropdown  {
-		transform: translate3d(0, 2.5rem,0);
-		
+		transform: translate3d(0, 2.5rem,0);		
 	}
 
 	ul.menuDropdown {
