@@ -35,6 +35,7 @@ a:hover, a:focus {
 }
 
 /* ---------------Nav Bar----------------- */
+
 .navBar {
 	pointer-events: none;
   	position: fixed;
