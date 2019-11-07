@@ -200,7 +200,8 @@ a:hover, a:focus {
 	z-index: 20;
 }
 
-.enjoyTheCold {pointer-events: all;
+.enjoyTheCold {
+	pointer-events: all;
 	display: inline-block;
 	font-size: 38px;
 	font-style: italic;
@@ -273,18 +274,18 @@ ul.menuDropdown {
 
 .heroImageText {
 	position: absolute;
-	top: 50%;
+	top: 37%;
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
-	color: #15243D;
-	-moz-text-stroke-color: #15243D;
-    -webkit-text-stroke-color: #15243D;
+	color: #E2E7EB;
+	-moz-text-stroke-color: #E2E7EB;
+    -webkit-text-stroke-color: #E2E7EB;
 }
 
 h1 span {
-	color: rgba(21, 36, 61, 0.1);
-	-moz-text-stroke-color: #15243D;
-    -webkit-text-stroke-color: #15243D;
+	color: rgba(226, 231, 235, .08);
+	-moz-text-stroke-color: #E2E7EB;
+    -webkit-text-stroke-color: #E2E7EB;
     -moz-text-stroke-width: 2px;  
     -webkit-text-stroke-width: 2px;
 }
