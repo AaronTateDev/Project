@@ -618,7 +618,7 @@ footer :last-child {
 	}
 
 	.menuDropdown.hideMenuDropdown  {
-		transform: translate3d(0, 2.5rem,0);		
+		transform: translate3d(0, 2.5rem, 0);		
 	}
 
 	ul.menuDropdown {
