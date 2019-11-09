@@ -8,6 +8,6 @@ $(document).ready(function(){
 	});
 });
 
-$('a[href="#keepCoolAnchor"], a[href="#loveTravelAnchor"], a[href="#exploreNewPlacesAnchor"], a[href="#contactUsAnchor"]').
+$('a[href="#keepCoolNav"], a[href="#loveTravelNav"], a[href="#exploreNewPlacesNav"], a[href="#contactUsNav"]').
 attr('onclick', "$('#nav-icon').click()"); //Onclick Menu Hider
 
